@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+}
+
+#header {
+    height: 80px;
+    padding: 10px;
+
+    background: #415A77;
+}
+
+#header #logo {
+    width: 200px;
+    height: 100%;
+
+    background: #E0E1DD;
+}
+
+#main {
+    display: flex;
+    justify-content: space-between;
+    
+    height: 600px;
+
+    gap: 10px;
+    padding: 20px;
+}
+
+#main .card-aside {
+    background: #778DA9;
+    flex: 1;
+}
+
+#main .card-central {
+    background: #1B263B;
+    flex:2;
+}
+
+#footer {
+    height: 200px;
+    background: #415A77;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer #text {
+    height: 80px;
+    width: 300px;
+    
+    background: #E0E1DD;
+}
