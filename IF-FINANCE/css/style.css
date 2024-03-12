@@ -4,13 +4,13 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #f0f1f3;
 }
 
 header {
     height: 80px;
-    background: #000;   
+    background: #02010A;   
     padding: 0 40px;
     display: flex;
     align-items: center;
@@ -33,7 +33,7 @@ header {
 }
 
 .logo span {
-    color: #7ed8f6;
+    color: #223bbb;
 }
 
 nav {
@@ -54,14 +54,75 @@ nav ul  :hover {
 }
 
 main {
-    background: #f0f1f3;
-    min-height: calc(100vh - 380px);
+    background: #717989;
+    min-height: calc(100vh - 180px);
+    padding: 20px 40px;
+
+    display: flex; 
+    gap: 20px;
+}
+
+.card-ticker {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 400px;
+    height: fit-content;
+    /* background: #20003d; */
+    background: #04052E;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.ticker-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+}
+
+.ticker-name span {
+    font-size: 16px;
+    color: #d5c9c9;
+}
+
+.ticker-value span {
+    font-size: 16px;
+}
+
+.ticker-avaliable {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 4px;
+}
+
+.ticker-avaliable p {
+    opacity: 80%;
+}
+
+.ticker-ocilation {
+    background: #008000;
+    padding: 8px;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.ticker-user-actions {
+    display: flex;
+    justify-content: space-between;
 }
 
 footer {
-    background: #000;
-    min-height: 300px;
+    background: #02010A;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
+    padding: 20px 0;
+    min-height: 100px;
 }
