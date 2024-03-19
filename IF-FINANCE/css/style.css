@@ -1,96 +1,44 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: "Roboto", sans-serif;
-    color: #f0f1f3;
-}
-
-header {
-    height: 80px;
-    background: #02010A;   
-    padding: 0 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.logo img {
-    width: 60px;
-    height: 60px;
-}
-
-.logo h1 {
-    color: #f0f1f3;
-}
-
-.logo span {
-    color: #223bbb;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-}
-
-nav ul {
-    display: flex;
-    gap: 20px;
-    list-style-type: none;
-    color: #f0f1f3;
-}
-
-nav ul  :hover {
-    opacity: 90%;
-    cursor: pointer;
-}
-
 main {
-    background: #717989;
-    min-height: calc(100vh - 180px);
-    padding: 20px 40px;
-
     display: flex; 
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background: #1B263B;
+    min-height: calc(100vh - 260px);
+    padding: 20px 40px;
+    flex-direction: column;   
 }
 
 .card-ticker {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 400px;
-    height: fit-content;
-    /* background: #20003d; */
-    background: #04052E;
+
     border-radius: 20px;
     padding: 20px;
+    
+    height: fit-content;
+    width: 400px;
+    background: #415A77;
 }
 
-.ticker-name {
+.card-ticker-name {
     display: flex;
     justify-content: space-between;
     align-items: end;
-
 }
 
-.ticker-name span {
+.card-ticker-name span {
     font-size: 16px;
     color: #d5c9c9;
 }
 
-.ticker-value span {
+.card-ticker-price span {
     font-size: 16px;
 }
 
-.ticker-avaliable {
+.card-ticker-evaluation {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -98,31 +46,47 @@ main {
     margin-top: 4px;
 }
 
-.ticker-avaliable p {
+.card-ticker-evaluation p {
     opacity: 80%;
 }
 
-.ticker-ocilation {
-    background: #008000;
-    padding: 8px;
-    border-radius: 12px;
-
+.card-ticker-ocillation {
     display: flex;
     justify-content: center;
+    
+    padding: 8px;
+    border-radius: 12px;
+    
+    background: #008000;
 }
 
-.ticker-user-actions {
+.card-ticker-user-actions {
     display: flex;
     justify-content: space-between;
 }
 
 footer {
-    background: #02010A;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     padding: 20px 0;
     min-height: 100px;
+
+    background: #02010A;
+}
+
+table {
+    border-collapse: collapse;
+    max-width: 1000px;
+    margin: auto;
+}
+tr, td, th {
+    border: 1px solid gray;
+    text-align: center;
+    padding: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: gray;
 }
