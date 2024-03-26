@@ -26,7 +26,76 @@
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <form action="server.php" method="POST">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <div class="input">
+                    <label for="name">Nome: </label>
+                    <input type="text" name="name" id="name">
+                </div>
+               
+                <div class="input">
+                    <label for="surname">Sobrenome: </label>
+                    <input type="text" name="surname" id="surname">
+                </div>
+
+                <div class="input">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="input">
+                    <label for="password">Senha: </label>
+                    <input type="password" name="password" id="password">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço</legend>
+
+                <div class="input">
+                    <label for="street">Rua: </label>
+                    <input type="text" name="street" id="street">
+                </div>
+                
+                <div class="input">
+                    <label for="city">Cidade: </label>
+                    <select name="city" id="city">
+                        <option default selected>Selecione uma cidade</option>
+                        <option value="caraguatatuba">Caraguatatuba</option>
+                        <option value="ubatuba">Ubatuba</option>
+                        <option value="são sebastião">São Sebastião</option>
+                    </select>
+                </div>
+
+                <h5>Frequência que visita o litoral: </h5>
+
+                <div class="radio-input">
+                    <div>
+                        <input type="radio" name="frequency" id="pouco" value="pouco"><label for="pouco">Pouco</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="frequency" id="eventualmente" value="eventualmente"><label for="eventualmente">Eventualmente</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="frequency" id="muito" value="muito"><label for="muito">Muito</label>
+                    </div>
+                </div>
+                
+            </fieldset>
+
+            <div class="checkbox">
+                <input type="checkbox" name="terms" id="terms"><label for="terms"> Concordo que li os termos de uso e estou de acordo! </label><br>
+                <input type="checkbox" name="newsletter" id="newsletter"><label for="terms"> Gostaria de receber emails da nossa newsletter com novidades e produtos?</label>
+            </div>
+            
+            <input type="submit" value="Enviar" class="button">
+            <input type="reset" value="Resetar" class="button"><label>(Não usar)</label>
+        </form>
+    </main>
     <footer>
         <p>Todos os direitos reservados &copy; - Lucas Batista - 2024</p>
       </footer>
