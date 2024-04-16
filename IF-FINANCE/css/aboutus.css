@@ -1,0 +1,42 @@
+main {
+    display: flex; 
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    background: #1B263B;
+    min-height: calc(100vh - 260px);
+    padding: 20px 40px;
+    flex-direction: column;   
+}
+
+section {
+    max-width: 800px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.article {
+    display: flex;
+    gap: 80px;
+
+    /* text-align: justify; */
+}
+
+.article img {
+    object-fit: contain;
+    align-self: flex-start;
+}
+
+.article ol {
+    margin-left: 1em;
+}
+
+@media (max-width: 800px) {
+    .article {
+        flex-wrap: wrap;
+    }
+}

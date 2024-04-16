@@ -1,0 +1,52 @@
+main {
+    display: flex; 
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    background: #1B263B;
+    min-height: calc(100vh - 260px);
+    padding: 20px 40px;
+    flex-direction: column;   
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    padding: 12px;
+}
+
+fieldset input, select { 
+    border-radius: 4px;
+    border: 1px solid gray;
+    padding: 8px;
+    font-size: 16px;
+}
+
+fieldset .input {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    
+    margin-bottom: 8px;
+}
+
+fieldset .radio-input div {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+form .checkbox {
+    margin: 20px 0;
+}
+
+form .button {
+    padding: 8px; 
+    border-radius: 12px;
+    border: none;
+    width: 120px;
+}
+

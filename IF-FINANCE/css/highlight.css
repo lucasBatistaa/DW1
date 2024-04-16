@@ -1,0 +1,36 @@
+main {
+    display: flex; 
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    background: #1B263B;
+    min-height: calc(100vh - 260px);
+    padding: 20px 40px;
+    flex-direction: column;   
+}
+
+table {
+    border-collapse: collapse;
+    max-width: 1000px;
+}
+tr, td, th {
+    border: 1px solid gray;
+    text-align: center;
+    padding: 20px;
+}
+
+tr:nth-child(odd) {
+    background: #003079
+}
+
+tr:nth-child(even) {
+    background: #000e29;
+}
+
+@media (max-width: 800px) {
+    main {
+        overflow-y: scroll;
+    }
+}

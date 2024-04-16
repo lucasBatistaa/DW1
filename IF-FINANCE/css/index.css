@@ -3,11 +3,12 @@ main {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: flex-start;
 
     background: #1B263B;
     min-height: calc(100vh - 260px);
     padding: 20px 40px;
-    flex-direction: column;   
+    flex-direction: row;   
 }
 
 .card-ticker {
@@ -64,34 +65,3 @@ main {
     display: flex;
     justify-content: space-between;
 }
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    padding: 20px 0;
-    min-height: 100px;
-
-    background: #02010A;
-}
-
-table {
-    border-collapse: collapse;
-    max-width: 1000px;
-    margin: auto;
-}
-tr, td, th {
-    border: 1px solid gray;
-    text-align: center;
-    padding: 20px;
-}
-
-tr:nth-child(even) {
-    background-color: gray;
-}
-
-// contact
-
-
-
